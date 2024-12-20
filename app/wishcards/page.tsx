@@ -16,8 +16,8 @@ export default function Page(){
     const router = useRouter();
 
     async function clientCreateCard(){
-        const item = prompt("Please enter your wish item", "Rice (1KG)") // qn, default text
-        const money = (prompt("Please enter the cost ($)", "4.05")) // qn, default text
+        const item = prompt("Please enter your favour", "Slide into my DMs") // qn, default text
+        const money = (prompt("Please enter a random number for fun", "4.05")) // qn, default text
         const msg = prompt("Please enter your message", "thajks") // qn, default text
         if (item == null || item == "" || money == null || money == "" || msg == null || msg == "") {
             alert("cancel")
