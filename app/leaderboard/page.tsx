@@ -21,9 +21,11 @@ export default function Page(){
                 return;
             }
             try {
-                if (r.status === 401) {
-                    signOut(auth);
-                    return
+                if (typeof(r) == 'object') {
+                    if (r.status === 401) {
+                        signOut(auth);
+                        return
+                    }
                 }
             } catch(e) {
                 console.log(e)
