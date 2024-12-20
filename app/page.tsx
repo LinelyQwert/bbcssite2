@@ -37,10 +37,6 @@ export default function Page(){
                 id="nav-bar"
                 className="text-lg flex justify-end flex-row w-max max-h-12"
                 >
-                    <button onClick={() => redirect("about")} type="button" className="mx-2">
-                        About
-                    </button>
-                    <p>|</p>
                     <button onClick={() => redirect("leaderboard")} type="button" className="mx-2">
                         Top Santas
                     </button>

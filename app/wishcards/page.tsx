@@ -87,10 +87,6 @@ export default function Page(){
                 id="nav-bar"
                 className="text-lg flex justify-end flex-row w-max max-h-12"
                 >
-                    <button onClick={() => redirect("about")} type="button" className="mx-2">
-                        About
-                    </button>
-                    <p>|</p>
                     <button onClick={() => redirect("leaderboard")} type="button" className="mx-2">
                         Top Santas
                     </button>
@@ -130,8 +126,8 @@ export default function Page(){
                                                 </div>
                                                 <div className="card__body px-[30px]">
                                                     <h3>{field.cost}</h3>
-                                                    <h3>Message: {field.message}</h3>
-                                                    <h3>to {field.author}</h3>
+                                                    <h3>Message by the author: {field.message}</h3>
+                                                    <h3>author: {field.author}</h3>
                                                 </div>
 
                                             </div>
