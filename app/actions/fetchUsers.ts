@@ -21,7 +21,7 @@ export async function fetchUsers(){
 
                 const colRef = await adminFirestore.collection("users").listDocuments();
                 const snapshots = await adminFirestore.getAll(...colRef)
-                let dat = []
+                const dat = []
                 for (const snapshot of snapshots){
                     if (snapshot.exists){
                         dat.push(await snapshot.data()) 
