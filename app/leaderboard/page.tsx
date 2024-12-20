@@ -113,10 +113,10 @@ export default function Page(){
                 <div className="hero-text min-w-[40%] rot-y max-h-[55%] overflow-scroll nobar">
                     <ul className=" border-black border-2  min-h-[100%] relative mt-0">
 
-                        {users ? (
-                            clientParseUsers(users)
-                            ) : (
+                        {(users == undefined || 'status' in users) ? (                            
                             <p className="text-black">Loading...</p>
+                            ) : (
+                            clientParseUsers(users)
                         )}
 
                         <li>
