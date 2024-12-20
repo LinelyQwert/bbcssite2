@@ -5,11 +5,6 @@ import { auth } from "@/app/firebase";
 import {useRouter} from "next/navigation";
 import {useEffect, useState} from "react";
 import { DocumentData } from "firebase-admin/firestore";
-import { checkAuth } from "../actions/checkCardAuth";
-import { truncate } from "fs";
-import { createCard } from "../actions/createCard";
-import { fetchCard } from "../actions/fetchCard";
-import { deleteCard } from "../actions/deleteCard";
 import { fetchUsers } from "../actions/fetchUsers";
 
 export default function Page(){

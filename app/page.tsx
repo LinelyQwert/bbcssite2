@@ -1,9 +1,9 @@
 'use client'
 
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import {onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "@/app/firebase";
 import {useRouter} from "next/navigation";
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 
 
 export default function Page(){
