@@ -119,7 +119,7 @@ export default function Page(){
                         {docData ? (Object.entries(docData).map(([id, field]) => (
                             <div key={id} className="mb-5 w-[30%] max-w-[30%] ar text-black flex justify-center text-center">
                                 <div className="card">
-                                    <div className="card__inner" onClick={(e) => {e.currentTarget.classList.toggle("is-flipped"); id=e.target.id}}>
+                                    <div id={id} className="card__inner" onClick={(e) => {e.currentTarget.classList.toggle("is-flipped")}}>
                                         <div className="card__face card__face--front">
                                             <img src="card.png" className="object-cover h-auto" />
                                         </div>
