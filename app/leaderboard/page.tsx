@@ -21,7 +21,7 @@ export default function Page(){
                 return;
             }
             try {
-                if (typeof(r) == 'object') {
+                if ('status' in r) {
                     if (r.status === 401) {
                         signOut(auth);
                         return
