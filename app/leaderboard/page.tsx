@@ -31,8 +31,10 @@ export default function Page(){
                 console.log(e)
             }
             setUsers(r)
-            for (const data of r){
-                console.log(`Retrieved data: ${JSON.stringify(data)}`)
+            if(!('status' in r)){
+                for (const data of r){
+                    console.log(`Retrieved data: ${JSON.stringify(data)}`)
+                }
             }
         })
     }
