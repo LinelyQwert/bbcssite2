@@ -117,7 +117,7 @@ export default function Page(){
                 className="flex justify-evenly mx-8 flex-row flex-wrap max-w-full h-max"
                 >
                         {docData ? (Object.entries(docData).map(([id, field]) => (
-                            <div id={id} className="mb-5 w-[30%] max-w-[30%] ar text-black flex justify-center text-center">
+                            <div key={id} className="mb-5 w-[30%] max-w-[30%] ar text-black flex justify-center text-center">
                                 <div className="card">
                                     <div className="card__inner" onClick={(e) => {e.currentTarget.classList.toggle("is-flipped"); id=e.target.id}}>
                                         <div className="card__face card__face--front">
