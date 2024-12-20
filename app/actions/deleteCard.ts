@@ -17,7 +17,7 @@ export async function deleteCard(id: string) {
                 const docRef2 = adminFirestore.collection("users").doc(decodedToken.email);
                 const doc = await docRef2.get()
                 if (!doc.exists){
-                    var username = decodedToken.email.split("@")[0];
+                    const username = decodedToken.email.split("@")[0];
                     await adminFirestore.collection("users").doc(decodedToken.email).set({"givenGifts":1, "name":username})
                 } else{
                     docRef2.update({
