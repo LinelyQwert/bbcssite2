@@ -29,7 +29,7 @@ export default function Page(){
     }
 
     async function clientDeleteCard() {
-        const res = prompt("What is the ID of the card u wish to delete?")
+        const res = prompt("What is the ID of the card u wish to claim?")
         if (res == "" || res == null){            
             alert("Cancelled")
         } else {
@@ -105,7 +105,7 @@ export default function Page(){
                     <button className="text-white bg-red-600 mb-2 w-40 h-10 rounded-2xl" onClick={() => clientCreateCard()}>Create Card</button>
                 </div>
                 <div>
-                    <button className="text-white bg-red-600 mb-2 w-40 h-10 rounded-2xl" onClick={() => clientDeleteCard()}>Delete Card</button>
+                    <button className="text-white bg-red-600 mb-2 w-40 h-10 rounded-2xl" onClick={() => clientDeleteCard()}>Claim Card</button>
                 </div>
 
                 <div

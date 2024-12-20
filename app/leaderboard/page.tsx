@@ -41,6 +41,11 @@ export default function Page(){
 
     function clientParseUsers(data : (DocumentData | undefined)[]){
         const res = []
+        if (true) {
+            data = data.filter(user => user !== undefined).sort((a, b) => (
+                a.givenGifts > b.givenGifts ? 1 : b.age > a.age ? -1 : 0
+            ))
+        }
         
         for (const user of data){
             if (user !== undefined){
@@ -118,103 +123,103 @@ export default function Page(){
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
                         <li>
                             <div className="flex justify-evenly flex-col border-black border-2 text-center items-center">
                                 <h1 className="text-3xl">MakeAWish Foundation</h1>
-                                <p> 10 Gifts Given</p>
+                                <p> 0 Gifts Given</p>
                             </div>
                         </li>
 
