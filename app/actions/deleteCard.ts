@@ -13,8 +13,13 @@ export async function deleteCard(id: string) {
         try {
             const decodedToken = await adminAuth.verifyIdToken(token);
             if (decodedToken?.email) {
-                const docRef = adminFirestore.collection("cards").doc("card");
-                const docRef2 = adminFirestore.collection("users").doc(decodedToken.email);
+                const docRef = adminFirestore.collection("cards").doc("card");                
+                const card = (await docRef.get()).data()
+                if (card == undefined){throw new Error("undefined for some reason")}                
+                const email = card[id]["author"]
+                console.error(email)
+                console.error(card)
+                const docRef2 = adminFirestore.collection("users").doc(email);
                 const doc = await docRef2.get()
                 if (!doc.exists){
                     const username = decodedToken.email.split("@")[0];
