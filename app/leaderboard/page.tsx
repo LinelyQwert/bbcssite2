@@ -43,7 +43,7 @@ export default function Page(){
         const res = []
         if (true) {
             data = data.filter(user => user !== undefined).sort((a, b) => (
-                a.givenGifts > b.givenGifts ? 1 : b.age > a.age ? -1 : 0
+                a.givenGifts > b.givenGifts ? -1 : b.age > a.age ? 1 : 0
             ))
         }
         
