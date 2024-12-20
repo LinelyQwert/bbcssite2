@@ -1,12 +1,10 @@
 'use client'
 
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "@/app/firebase";
 import {useRouter} from "next/navigation";
 import {useEffect, useState} from "react";
 import { DocumentData } from "firebase-admin/firestore";
-import { checkAuth } from "../actions/checkCardAuth";
-import { truncate } from "fs";
 import { createCard } from "../actions/createCard";
 import { fetchCard } from "../actions/fetchCard";
 import { deleteCard } from "../actions/deleteCard";
@@ -54,6 +52,7 @@ export default function Page(){
                 return acc;
             }, {});
             setEditValues(initialEditValues);
+            console.log(editValues)
         })
     }
 

@@ -1,6 +1,6 @@
 'use client'
 
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
+import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "@/app/firebase";
 import {useRouter} from "next/navigation";
 import {useEffect, useState} from "react";
@@ -29,7 +29,7 @@ export default function Page(){
                 console.log(e)
             }
             setUsers(r)
-            for (let data of r){
+            for (const data of r){
                 console.log(`Retrieved data: ${JSON.stringify(data)}`)
             }
         })
@@ -38,7 +38,7 @@ export default function Page(){
     function clientParseUsers(data : (DocumentData | undefined)[]){
         const res = []
         
-        for (let user of data){
+        for (const user of data){
             if (user !== undefined){
                 res.push(
                     <li>
